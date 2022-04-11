@@ -19,10 +19,12 @@ public interface Group<T> {
      *     <li><b>closed</b> for the parameter type <code>T</code>. That is, the result of the binary operation is a
      *     valid member of the set that defines the type <code>T</code> (taking the denotational semantics view of data
      *     types). For example, addition is a binary operation that is closed for integers, but division is not.</li>
+     *     
      *     <li><b>associative</b>. That is, for any elements <code>x</code>, <code>y</code>, and <code>z</code> in this
      *     group, <code>binaryOperation(binaryOperation(x, y), z)</code> is equal to
      *     <code>binaryOperation(x, binaryOperation(y, z))</code>. For example, addition is an associative binary
      *     operation for integers.</li>
+     *     
      *     <li>respectful of the identity element. That is, for any element <code>x</code> in this group and the
      *     identity element <code>e</code> of this group, <code>binaryOperation(x, e)</code> is equal to <code>x</code>,
      *     and <code>binaryOperation(e, x)</code> is also equal to <code>x</code>. For example, <code>0</code> is the

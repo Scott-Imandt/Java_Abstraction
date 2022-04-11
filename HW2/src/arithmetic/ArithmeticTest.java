@@ -18,6 +18,8 @@ public class ArithmeticTest {
                 System.out.printf("%s * %s = %s%n", u.toString(), v.toString(), e.toString());
                 System.out.printf("inverseOf(%s) = %s%n", e.toString(), g.inverseOf(e).toString());
             }
+            
         }
+
     }
 }
