@@ -4,6 +4,9 @@ import java.util.Collection;
 
 /**
  * @author Ritwik Banerjee
+ * 
+ * DO NOT CHANGE ANY CODE
+ * 
  * @since Mar 2022
  */
 public interface Symmetries<S extends Shape> {
