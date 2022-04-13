@@ -11,8 +11,9 @@ import java.util.Collection;
  */
 public interface Symmetries<S extends Shape> {
     
-    boolean areSymmetric(S s1, S s2);
+    // compares two shapes and determine if the shapes are any of the symmetries
+	boolean areSymmetric(S s1, S s2);
     
-    //fix Collections from Collections<s> to Collections
-    Collection symmetriesOf(S s);
+    // Returns a collection of all types of symmetries that this shape has.
+    Collection<S> symmetriesOf(S s);
 }

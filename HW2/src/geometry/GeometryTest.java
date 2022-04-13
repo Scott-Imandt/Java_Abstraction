@@ -28,7 +28,7 @@ public class GeometryTest {
 //        TriangleSymmetries triangleSymmetries = new TriangleSymmetries();
 //        triangleSymmetries.areSymmetric(t1, t2); // expected to return false
 //        triangleSymmetries.areSymmetric(t1, t3); // expected to return true
-//        List<EqTriangle> symmetries = triangleSymmetries.symmetriesOf(t1);
+//        Collection<EqTriangle> symmetries = triangleSymmetries.symmetriesOf(t1);
         
         // Your code must ensure that t1.toString() returns the following String
         // "EqTriangle: (0, 0), (2, 0), (1, 1.732)"
@@ -45,7 +45,7 @@ public class GeometryTest {
 //        SquareSymmetries squareSymmetries = new SquareSymmetries();
 //        squareSymmetries.areSymmetric(s1, s2); // expected to return false
 //        squareSymmetries.areSymmetric(s1, s3); // expected to return true
-//        List<Square> symmetries = squareSymmetries.symmetriesOf(s1);
+//        Collection<Square> symmetries = squareSymmetries.symmetriesOf(s1);
         
         // Your code must ensure that s1.toString() returns the following String
         // "Square: (0, 1), (1, 1), (1, 2), (0, 2)"

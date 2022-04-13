@@ -12,7 +12,7 @@ public class SquareSymmetries implements Symmetries<Square>{
 
 	//Change to Collections<Shape> or leave generic?
 	@Override
-	public Collection symmetriesOf(Square s) {
+	public Collection<Square> symmetriesOf(Square s) {
 		// TODO Auto-generated method stub
 		return null;
 	}

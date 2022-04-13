@@ -12,7 +12,7 @@ public class TriangleSymmetries implements Symmetries<EqTriangle>{
 	}
 
 	@Override
-	public Collection symmetriesOf(EqTriangle s) {
+	public Collection<EqTriangle> symmetriesOf(EqTriangle s) {
 		// TODO Auto-generated method stub
 		return null;
 	}

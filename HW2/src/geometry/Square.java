@@ -32,6 +32,7 @@ public class Square implements Shape {
     		this.vertices.add(2, vertices[2]);
     		this.vertices.add(3, vertices[3]);
     		
+    		//Professor stated that this is ok due to code in Geometry test error
     		Collections.sort(this.vertices, new Counterclockwise());
     		
     		//test code
