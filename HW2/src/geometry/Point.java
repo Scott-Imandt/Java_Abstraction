@@ -22,4 +22,12 @@ public class Point {
     public double getY() {
         return this.y;
     }
+    
+    // custom methods
+    
+    @Override
+    public String toString() {
+    	return "( " + this.getX() + ", " + this.getY() + " )";
+    }
+
 }
