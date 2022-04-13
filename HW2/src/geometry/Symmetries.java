@@ -13,5 +13,6 @@ public interface Symmetries<S extends Shape> {
     
     boolean areSymmetric(S s1, S s2);
     
-    Collection<S> symmetriesOf(S s);
+    //fix Collections from Collections<s> to Collections
+    Collection symmetriesOf(S s);
 }

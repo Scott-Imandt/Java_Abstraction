@@ -4,7 +4,7 @@ import java.util.Comparator;
 
 public class Counterclockwise implements Comparator<Point>{
 
-	// implement serializable
+	// implement serializable for tree structures and stuff
 	
 	
 	@Override

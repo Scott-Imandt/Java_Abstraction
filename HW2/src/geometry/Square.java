@@ -33,6 +33,10 @@ public class Square implements Shape {
     		this.vertices.add(3, vertices[3]);
     		
     		Collections.sort(this.vertices, new Counterclockwise());
+    		
+    		//test code
+    		this.vertices.forEach(n -> System.out.println(n));
+    		System.out.println("\n");
     	
     		try {
     			isMember(this.vertices); // return exception if false 
@@ -72,7 +76,7 @@ public class Square implements Shape {
     	if(D1 != D2) return false;
     	
     	
-    	// do slope formula and determine opposite reciprical
+    	// do slope formula and determine opposite reciprocal
         
     	double S1 = threeDecimal((vertices.get(3).getY() - vertices.get(0).getY())/(vertices.get(3).getX() - vertices.get(0).getX()));
     	

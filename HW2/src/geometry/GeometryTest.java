@@ -1,5 +1,6 @@
 package geometry;
 
+import java.util.List;
 
 /**
  * This class is given to you as an outline for testing your code. You can modify this as you want, but please keep in
@@ -24,7 +25,7 @@ public class GeometryTest {
         EqTriangle t2 = t1.rotateBy(10);
         EqTriangle t3 = t1.rotateBy(120);
       
-//       TriangleSymmetries triangleSymmetries = new TriangleSymmetries();
+//        TriangleSymmetries triangleSymmetries = new TriangleSymmetries();
 //        triangleSymmetries.areSymmetric(t1, t2); // expected to return false
 //        triangleSymmetries.areSymmetric(t1, t3); // expected to return true
 //        List<EqTriangle> symmetries = triangleSymmetries.symmetriesOf(t1);
@@ -38,8 +39,8 @@ public class GeometryTest {
     
     private static void testSquareSymmetries() {
         Square s1 = new Square(new Point(1, 1), new Point(1, 2), new Point(0, 2), new Point(0, 1));
-        Square s2 = s1.rotateBy(30);
-        Square s3 = s1.rotateBy(180);
+ //       Square s2 = s1.rotateBy(30);
+ //       Square s3 = s1.rotateBy(180);
         
 //        SquareSymmetries squareSymmetries = new SquareSymmetries();
 //        squareSymmetries.areSymmetric(s1, s2); // expected to return false
