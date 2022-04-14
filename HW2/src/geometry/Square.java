@@ -141,6 +141,14 @@ public class Square implements Shape {
 		
     	return this.getClass().getName() + "\t" + points;
     	
+    	
+		/*	
+    	return this.getClass().getName() + "\t" +"[ "+
+    	"("+ threeDecimal(this.vertices().get(0).getX()) +" , "+ threeDecimal(this.vertices().get(0).getY()) +")"+
+    	"("+ threeDecimal(this.vertices().get(2).getX()) +" , "+ threeDecimal(this.vertices().get(2).getY()) +")"+
+    	"("+ threeDecimal(this.vertices().get(3).getX()) +" , "+ threeDecimal(this.vertices().get(3).getY()) +")"+
+    	"("+ threeDecimal(this.vertices().get(1).getX()) +" , "+ threeDecimal(this.vertices().get(1).getY())+ ") ]";
+    	*/
     }
     
 // --------------- Custom Methods added ------------------------

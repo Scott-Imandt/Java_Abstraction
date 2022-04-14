@@ -37,8 +37,7 @@ public class TriangleSymmetries implements Symmetries<EqTriangle>{
 	//-------------- Custom Code -----------------------------
 	
 	//identity check
-	private EqTriangle identityCheck(EqTriangle s1c) {
-		
+	private EqTriangle identityCheck(EqTriangle s1c) {	
 
 		EqTriangle temp2 = s1c.rotateBy(0);
 		

@@ -38,26 +38,28 @@ public class GeometryTest {
         for (EqTriangle t : symmetries)
             System.out.println(t.toString());
     }
-    
+    //
+    // Note the ordering of points is not counter clock as described. It is bottom left, top left, bottom right, top right
+    // I interprited sort by lowest x value and lowest to highest with tie in y as desider NOT WHAT PROFESSOR SAID BOTTOM LEFT THEN COUNTER CLOCK
+    //
     private static void testSquareSymmetries() {
         Square s1 = new Square(new Point(1, 1), new Point(1, 2), new Point(0, 2), new Point(0, 1));
         
-        System.out.println(s1);
         
- //       Square s2 = s1.rotateBy(30);
- //       Square s3 = s1.rotateBy(180);
+        Square s2 = s1.rotateBy(30);
+        Square s3 = s1.rotateBy(180);
         
-//        SquareSymmetries squareSymmetries = new SquareSymmetries();
-//        squareSymmetries.areSymmetric(s1, s2); // expected to return false
-//        squareSymmetries.areSymmetric(s1, s3); // expected to return true
-//        Collection<Square> symmetries = squareSymmetries.symmetriesOf(s1);
+        SquareSymmetries squareSymmetries = new SquareSymmetries();
+        squareSymmetries.areSymmetric(s1, s2); // expected to return false
+        squareSymmetries.areSymmetric(s1, s3); // expected to return true
+        Collection<Square> symmetries = squareSymmetries.symmetriesOf(s1);
         
         // Your code must ensure that s1.toString() returns the following String
         // "Square: (0, 1), (1, 1), (1, 2), (0, 2)"
         // Note that the order of vertices is not what was given in the constructor above, but rather, the
         // counterclockwise ordering.
         // Any non-integer coordinate value must be correctly rounded and represented with three decimal places.
-//        for (Square s : symmetries)
-//            System.out.println(s.toString());
+        for (Square s : symmetries)
+            System.out.println(s.toString());
     }
 }
