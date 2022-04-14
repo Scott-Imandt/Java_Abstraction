@@ -35,9 +35,6 @@ public class Square implements Shape {
     		//Professor stated that this is ok due to code in Geometry test error
     		Collections.sort(this.vertices, new Counterclockwise());
     		
-    		//test code
-    		this.vertices.forEach(n -> System.out.println(n));
-    		System.out.println("\n");
     	
     		try {
     			isMember(this.vertices); // return exception if false 

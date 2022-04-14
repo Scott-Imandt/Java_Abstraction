@@ -29,5 +29,13 @@ public class Point {
     public String toString() {
     	return "( " + this.getX() + ", " + this.getY() + " )";
     }
+    
+    //Overload
+    public boolean equals(Point temp) {
+    	
+    	if(this.getX() == temp.getX() && this.getY() == temp.getY()) return true;
+    	
+    	return false;
+    }
 
 }

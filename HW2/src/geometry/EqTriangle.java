@@ -102,7 +102,7 @@ public class EqTriangle implements Shape {
     	double yc = (vertices.get(0).getY()+vertices.get(1).getY()+vertices.get(2).getY())/3.0;
     		
     	center = new Point(xc, yc);
-    	   	
+    	 	   	
   	
     	//----------translate that shape using center to origin------------
     		
@@ -148,5 +148,29 @@ public class EqTriangle implements Shape {
     	return this.getClass().getName() + "\t" + points;
     	
     }
+    
+	//overloading
+	public boolean equals(EqTriangle t2) {
+		
+		EqTriangle temp1 = this;
+		EqTriangle temp2 = t2;
+		
+		temp1.vertices().forEach(n -> n = new Point(threeDecimal(n.getX()), threeDecimal(n.getY())));
+		temp2.vertices().forEach(n -> n = new Point(threeDecimal(n.getX()), threeDecimal(n.getY())));
+		
+		int i = 0; 
+		
+		// this is bad and has problems but will be temperary;
+		for(Point p : temp1.vertices) {
+			if(p.equals(temp2.vertices().get(0))) i++;
+			if(p.equals(temp2.vertices().get(1))) i++;
+			if(p.equals(temp2.vertices().get(2))) i++;
+			
+		}
+
+		if(i == 3) return true;
+		
+		return false;
+	}
     
 }
